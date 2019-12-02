@@ -32,7 +32,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-    log.Print("Pi calculator started.")
+    log.Print("Pi calculator started.1")
 
     http.HandleFunc("/", handler)
 
