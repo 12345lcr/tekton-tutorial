@@ -22,7 +22,7 @@ func calculatePi(iterations int) float64 {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-    log.Print("Pi calculator received a request.")
+    log.Print("Pi calculator received a request.update")
     iterations, err := strconv.Atoi(r.URL.Query()["iterations"][0])
     if err != nil {
         fmt.Fprintf(w, "iterations parameter not valid\n")
